@@ -5,17 +5,149 @@
 /*Weights: 400, 700*/
 
 :root {
-    --Cyan: hsl(179, 62%, 43%);
+    --Cyan: rgb(42, 178, 175);
     --Bright-Yellow: hsl(71, 73%, 54%);
     --Light--ray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
 } 
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box
 }
 
 body {
+    min-height: 100vh;
+    width: 100vw;
+
     font-family: "Karla", serif;
     Font-size: 16px;
+}
+
+main {
+    background-color: var(--Light--ray);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div#centro {
+    max-width: 330px;
+
+}
+
+div#q1 {
+    padding: 30px;
+    height: 33%;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+
+div#q1 > h1 {
+    padding-bottom: 20px;
+
+    color: var(--Cyan);
+
+    font-size: 20px;
+}
+
+div#q1 > h2 {
+    padding-bottom: 20px; 
+ 
+    color: var(--Bright-Yellow);
+
+    font-size: 16px;
+}
+
+div#q1 > p {
+    color: var(--Grayish-Blue);
+
+    line-height: 28px;
+    font-size: 16px;
+}
+
+div#q2 {
+    padding: 30px;
+    height: 33%;
+
+    background-color: var(--Cyan);
+}
+
+div#q2 > h1 {
+    padding-bottom: 10px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+div#q2flex {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div#q2flex > p#p1 {
+    padding-right: 18px;
+
+    color: white;
+    
+    font-size: 35px;
+}
+
+div#q2flex > p#p2 {
+    color: var(--Light--ray);
+}
+
+div#q2 > div#link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    border-radius: 10px;
+    background-color: var(--Bright-Yellow);
+}
+
+div#link> a {
+    color: white;
+
+    text-decoration: none;
+} 
+
+div#q2 > p {
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+div#q3 {
+    height: 34%;
+    padding: 30px;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:  rgb(55, 224, 222);;
+}
+
+div#q3 > h1 {
+    padding-bottom: 10px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+div#q3  > p {
+    max-width: 80%;
+
+    color: white;
+
+    line-height: 22px;
 }
