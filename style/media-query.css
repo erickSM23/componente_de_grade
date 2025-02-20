@@ -2,23 +2,30 @@
 
 @media screen and (min-width: 992px) {
     body, html {
-        min-width: 100vw;
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0px;
+        padding: 0px;
 
-
-        background-color:red;
+        
     }
     
     main {
-        display: block;
-        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        min-width: 100vw;
+        min-height: 100vh;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+        
+        
     }
 
     div#centro {
         display: grid;
+        max-width: 800px;
         grid-template-columns: 400px 400px;
         grid-template-rows: 250px 250px;
         grid-template-areas:
