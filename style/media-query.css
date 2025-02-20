@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    body, html {
+        min-width: 100vw;
+
+
+        background-color:red;
+    }
+    
+    main {
+        display: block;
+        background-color: black;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#centro {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 250px 250px;
+        grid-template-areas:
+        'caixa1 caixa1'
+        'caixa2 caixa3'
+        ;
+    }
+
+    div#q1 {
+        height: 100%;
+        grid-area: caixa1;
+    }
+
+    div#q2 {
+        height: 100%;
+        grid-area: caixa2;
+    }
+
+    div#q3 {
+        height: 100%;
+        grid-area: caixa3;
+        border-bottom-left-radius: 0px;
+    }
+}
